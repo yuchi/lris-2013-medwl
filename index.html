@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mobile Enterprise Development with Liferay</title>
+
+		<meta name="description" content="How Liferay enables us new Mobile Architectures">
+		<meta name="author" content="Pier Paolo Ramon">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Extended theme -->
+		<link rel="stylesheet" href="lib/css/lris2013/style.css" id="theme">
+
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="lib/font/font-awesome-4.0.3/css/font-awesome.min.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="twitter-banner">
+				<i class="fa fa-twitter-square"></i>
+				<span>#LRIS2013</span>
+			</div>
+
+			<div class="slides">
+
+				<section>
+					<h1 class="intro-header">Mobile Enterprise <br/> Development with Liferay</h1>
+
+					<p>
+						Pier Paolo Ramon<br/>
+						Senior Front-end Engineer, SMC
+					</p>
+
+					<ul class="fa-ul small">
+						<li>
+							<i class="fa fa-li fa-envelope"></i>
+							pierpaolo.ramon@smc.it
+						</li>
+						<li>
+							<i class="fa fa-li fa-github"></i>
+							yuchi
+						</li>
+						<li>
+							<i class="fa fa-li fa-twitter"></i>
+							_pier
+						</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h3>Un po’ di ovvietà:</h3>
+					<h2>il Mobile è in espansione</h2>
+					<h3 class="fragment">Numero di device</h3>
+					<h3 class="fragment">Tipologie di interazione</h3>
+				</section>
+
+				<section>
+					<h2>Non sappiamo cosa avremo</h2>
+					<h3 class="fragment">al polso</h3>
+					<h3 class="fragment">in mano</h3>
+					<h3 class="fragment">alle orecchie</h3>
+				</section>
+
+				<section>
+					<h2>Siamo inesperti</h2>
+					<h3>in confronto allo sviluppo ‘tradizionale’</h3>
+
+					<div class="fragment">
+						<p>È come essere tornati alle origini, prima di</p>
+						<ul>
+							<li>Mouse</li>
+							<li>Puntatore</li>
+							<li>Finestre</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h1>
+						<i class="fa fa-meh-o color-meh"></i>
+						<i class="fa fa-arrow-right"></i>
+						<i class="fa fa-smile-o color-smile"></i>
+					</h1>
+				</section>
+
+				<section>
+					<h2>La User Experience</h2>
+					<p>
+						Non è il Mobile che ci spinge a parlare di UX,<br/>
+						ma i cambiamenti introdotti.
+					</p>
+
+					<p>
+						Parlare di UX è lo strumento, la User Experience è l’obiettivo
+					</p>
+				</section>
+
+				<section>
+					<h2>La UX del Mobile</h2>
+					<ul>
+						<li>È l’interazione che raggiunge l’utente,
+							<br/>non il contrario</li>
+						<li>L’utente è il protagonista</li>
+						<li>Processi asincroni, il ritorno dell’offline</li>
+						<li><em>Task centered</em></li>
+					</ul>
+				</section>
+
+				<section>
+					<img class="the-portrait" src="lib/assets/brian.jpeg">
+					<blockquote>
+						<p>Liferay non segue la moda,<br />implementa ciò che ha senso implementare,<br />restando pronti a cambiare direzione</p>
+
+						<small>Brian Chan</small>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2><code>&lt;/buzzwords&gt;</code></h2>
+				</section>
+
+				<section>
+					<h2>Come agire?</h2>
+					<h3 class="fragment">Non esiste una sola strada</h3>
+					<h3 class="fragment">Nessuno strumento è migliore</h3>
+				</section>
+
+				<section>
+					<img class="borderless" src="lib/assets/spectrum_1.png">
+					<p><small>* Rispetto allo sviluppo Web per uno sviluppatore Web</small></p>
+				</section>
+
+				<section>
+					<h2>Responsive Web Design</h2>
+					<h3>Alloy UI 2.0 <i class="liferay62"></i></h3>
+					<h3>Bootstrap <small>(2.3.2)</small> <i class="liferay62"></i></h3>
+					<h3>Nuova UI del Portale <i class="liferay62"></i></h3>
+					<i class="fragment roll-in fa fa-check color-green big-check"></i>
+				</section>
+
+				<section>
+					<h2>Mobile Site</h2>
+					<h3>Device Rules con WURFL</h3>
+					<h3>Site Hierarchies <i class="liferay62"></i></h3>
+					<p>Non mutualmente esclusivo con RWD</p>
+					<i class="fragment roll-in fa fa-check color-green big-check"></i>
+				</section>
+
+				<section>
+					<img class="borderless" src="lib/assets/spectrum_2.svg">
+				</section>
+
+				<section data-background-color="#0a9343">
+					<img class="borderless" src="lib/assets/bruno.png">
+				</section>
+
+				<section>
+					<h2>Bruno Farache</h2>
+					<ul>
+						<li>Sviluppatore di Liferay Sync Mobile</li>
+						<li>Inizia a lavorare con PhoneGap</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>L'esperienza HTML5</h2>
+					<ul>
+						<li>Basic-authentication</li>
+						<li>Solo Base64 per i blob</li>
+						<li>Preview plugin</li>
+					</ul>
+				</section>
+
+				<!--
+				<section>
+					<h1>
+						<i class="fa fa-smile-o color-smile"></i>
+						<i class="fa fa-arrow-right"></i>
+						<i class="fa fa-frown-o color-frown"></i>
+					</h1>
+				</section>
+				-->
+
+				<section>
+					<h2>Sviluppo Nativo</h2>
+					<h1>
+						<i class="fragment jet-compare fa fa-fighter-jet"></i>
+					</h1>
+				</section>
+
+				<section>
+					<img class="the-portrait" src="lib/assets/programmerscantdesign.png">
+					<blockquote>
+						<p>Programmers can’t design</p>
+						<small>DevCon di Berlino 2013, B. Farache</small>
+					</blockquote>
+				</section>
+
+				<section>
+					<img width="500" src="lib/assets/liferaysync_v1_a.png">
+					<img width="500" src="lib/assets/liferaysync_v1_b.png">
+				</section>
+
+				<section>
+					<img height="300" src="lib/assets/liferaysync_revamp_ux_1.png">
+					<img height="300" src="lib/assets/liferaysync_revamp_ux_2.jpg">
+				</section>
+
+				<section data-background-color="#EAEAEA">
+					<img class="borderless" src="lib/assets/liferaysync_revamped_ui.png">
+				</section>
+
+				<section>
+					<h3>Un passo indietro</h3>
+					<h2>JSON WS</h2>
+					<ul>
+						<li>Servizi remoti</li>
+						<li>Autenticazione</li>
+						<li>Chiamate in <em>batch</em></li>
+						<li>Chiamate annidate</li>
+						<li>Anche dei plugin<br />
+							<small class="color-red fragment">che usano il Service Builder</small></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Chiamare i JSON WS</h2>
+					<h3>dal codice nativo</h3>
+					<ul>
+						<li>Molto codice ripetuto</li>
+						<li>Verboso</li>
+						<li>Nessun aiuto dalle IDE</li>
+					</ul>
+					<p>&nbsp;</p>
+					<h3 class="fragment">E se ci fosse un SDK? <i class="fa fa-heart color-red"></i></h3>
+				</section>
+
+				<section>
+					<h2>Liferay Mobile SDK</h2>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Basato sui JSON WS</li>
+						<li>Autenticazione</li>
+						<li>JSON parsing</li>
+						<li>Gestione degli errori</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Vediamolo in azione <i class="fa fa-android"></i></h2>
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<h2>Firma dei servizi</h2>
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<img class="borderless" src="lib/assets/liferaymobilesdk_demo_1.png">
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<h2>Chiamate in batch</h2>
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<img class="borderless" src="lib/assets/liferaymobilesdk_demo_2.png">
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<h2>Chiamate Asincrone</h2>
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<img class="borderless" src="lib/assets/liferaymobilesdk_demo_3.png">
+				</section>
+
+				<section class="reverse" data-background-color="#272822">
+					<h2>È un generatore</h2>
+					<h3>Anche dei plugin!</h3>
+					<p class="fragment color-red">Che usano il Service Builder</p>
+				</section>
+
+				<section>
+					<h3>Rilascio previsto</h3>
+					<h2 class="fragment">Q1 2014</h2>
+				</section>
+
+				<section>
+					<h3>Rilascio previsto</h3>
+					<h2>Q1 2014</h2>
+					<div class="support">
+						<div class="platform fragment">
+							<h3>Android</h3>
+							<i class="platform-icon fa fa-android"></i>
+							<p>Liferay</p>
+						</div>
+						<div class="platform fragment">
+							<h3>iOS</h3>
+							<i class="platform-icon fa fa-apple"></i>
+							<p>Liferay</p>
+						</div>
+						<div class="platform fragment">
+							<h3>.NET PCL</h3>
+							<i class="platform-icon fa fa-windows"></i>
+							<p>Dalla community</p>
+						</div>
+						<div class="platform highlight reverse fragment">
+							<h3>Titanium SDK</h3>
+							<img class="platform-icon borderless" src="lib/assets/titaniumsdk_3D.png">
+							<p>Da SMC</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Appcelerator</h3>
+					<h2>Titanium SDK</h2>
+					<ul>
+						<li>Piattaforma Ibrida</li>
+						<li>JavaScript</li>
+						<li>Non è HTML5</li>
+						<li><code>{native:"FTW"}</code></li>
+					</ul>
+				</section>
+
+				<!--
+				<section>
+					<h2>Cosa succede dopo?</h2>
+					<h3 class="fragment">Devo rivestirmi e andare via?</h3>
+					<h3 class="fragment">Ha senso dire grazie?</h3>
+					<h3 class="fragment">Mi dai il tuo numero?</h3>
+				</section>
+				-->
+
+				<section>
+					<h2>Cosa succede dopo?</h2>
+					<ul>
+						<li>Lo sviluppo è solo l’inizio</li>
+						<li>Dobbiamo seguire il prodotto</li>
+						<li class="fragment">Dobbiamo seguire le piattaforme</li>
+					</ul>
+				</section>
+
+				<!--
+				<section>
+					<h2>Di cosa abbiamo bisogno?</h2>
+					<ul>
+						<li>Numeri<span class="fragment">, tanti numeri</span></li>
+						<li></li>
+					</ul>
+				</section>
+				-->
+
+				<section>
+					<h3>Appcelerator Platform</h3>
+					<h2>L’obiettivo</h2>
+					<p>Va oltre lo sviluppo Mobile</p>
+					<h3>Gestione del Lifecycle</h3>
+					<h3>Garantire e migliorare la Experience nel tempo</h3>
+				</section>
+
+				<section>
+					<h1>Grazie!</h1>
+					<ul class="fa-ul">
+						<li>
+							<i class="fa fa-li fa-envelope"></i>
+							pierpaolo.ramon@smc.it
+						</li>
+						<li>
+							<i class="fa fa-li fa-github"></i>
+							yuchi
+						</li>
+						<li>
+							<i class="fa fa-li fa-twitter"></i>
+							_pier
+						</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			var call = Function.prototype.call;
+
+			var forEach = call.bind(Array.prototype.forEach);
+
+			forEach(document.querySelectorAll('.reveal ul'), function (ul) {
+				if (!ul.classList.contains('fa-ul')) {
+					ul.classList.add('fa-ul');
+					forEach(ul.querySelectorAll('li'), function (li) {
+						var icon = document.createElement('i');
+						icon.classList.add('fa', 'fa-li');
+						icon.classList.add(ul.getAttribute('data-list-style') || 'fa-angle-right');
+						li.appendChild(icon);
+					});
+				}
+			});
+
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'linear',
+				transitionSpeed: 'slow',
+
+				dependencies: [
+					{
+						src: 'lib/js/classList.js',
+						condition: function() { return !document.body.classList; } },
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() { hljs.initHighlightingOnLoad(); } },
+					{
+						src: 'plugin/zoom-js/zoom.js',
+						async: true,
+						condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

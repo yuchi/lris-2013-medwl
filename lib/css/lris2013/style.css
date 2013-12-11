@@ -1,0 +1,285 @@
+/* LRIS 2013 */
+
+body,
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	color: #383838;
+	/*font-family: "Helvetica Neue", Helvetica Neue, "Helvetica", Helvetica, sans-serif;*/
+	font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;
+	font-weight: 100;
+	text-shadow: none;
+}
+
+.reveal code {
+	font-family: Consolas, monospace;
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+	font-weight: 200;
+}
+
+.reveal .backgrounds .slide-background {
+	background:
+		no-repeat url('./master_symp.png') 0% 100%,
+		repeat url('./dots@1x.png') 100% 100%,
+		no-repeat url('./master_bg_back_bottom_left.png') 0% 100%,
+		repeat-x url('./master_bg_back_repeat.png') 100% 100%;
+	background-size:
+		776px 595px,
+		7px 7px,
+		776px 595px,
+		776px 595px;
+}
+
+.reveal .backgrounds > .slide-background:first-child {
+	background:
+		no-repeat url('./intro_symp.png') 0% 100%,
+		no-repeat url('./intro_bg_front.png') 100% 100%,
+		repeat url('./dots@1x.png') 100% 100%,
+		no-repeat url('./intro_bg_back.png') 100% 100%;
+	background-size:
+		380px 130px,
+		1800px 600px,
+		7px 7px,
+		1800px 600px;
+}
+
+.reveal .intro-header {
+	font-size: 2em;
+}
+
+.reveal .twitter-banner {
+	position: fixed;
+	bottom: 12px;
+	right: 20px;
+	color: white;
+	z-index: 100;
+	font-size: 23px;
+	letter-spacing: 1px;
+}
+
+.reveal .progress {
+	bottom: auto;
+	top: 40px;
+	height: 4px;
+}
+
+.reveal .progress > span {
+	background: #018BCD; /* chiaro */ 
+	/* background: #0077B1; /* scuro */
+}
+
+.reveal .fa {
+	font-family: FontAwesome !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	line-height: 1 !important;
+}
+
+.reveal .fa-ul.small {
+	font-size: 0.6em;
+	line-height: 1em;
+}
+
+.reveal .fa-ul.small li {
+	margin: 0.4em 0;
+}
+
+/* Jersey Shore-like things */
+
+.reveal .fragment.jet-compare {
+	-webkit-transform: translateX(-200px);
+}
+
+.reveal .fragment.jet-compare.visible {
+	-webkit-transform: translateX(0px);
+}
+
+/* Colors */
+
+.color-orange,
+.color-meh {
+	color: rgb(240,183,35);
+}
+
+.color-green,
+.color-smile {
+	color: rgb(13,209,64);
+}
+
+.color-red,
+.color-frown {
+	color: rgb(237, 68, 45);
+}
+
+.reveal {
+	color: #383838;
+}
+
+.reveal .reverse,
+.reveal .reverse h1,
+.reveal .reverse h2,
+.reveal .reverse h3,
+.reveal .reverse h4,
+.reveal .reverse h5,
+.reveal .reverse h6 {
+	color: white;
+	text-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+
+.fa-android {
+	color: #97CD00;
+}
+
+.fa-apple {
+	color: #B6BAC8;
+}
+
+.fa-windows {
+	color: #00ACF2;
+}
+
+/* Internal slides styles */
+
+.reveal .fa-ul {
+	list-style: none;
+}
+
+.reveal blockquote {
+	font-style: normal;
+/*	border: 1px solid rgb(0,166,141);
+	border-radius: 8px;
+	padding: 0.4em 0.6em;*/
+	box-shadow: none;
+	position: relative;
+}
+
+.reveal blockquote:before,
+.reveal blockquote:after {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	color: rgb(0,166,141);
+	opacity: 0.3;
+	font-size: 200px;
+	z-index: 0;
+	-webkit-transform: translateZ(-100px);
+}
+
+.reveal blockquote:before {
+	top: 0px;
+	left: 0px;
+	content: "\f10d"; /* fa-quote-left */
+}
+
+.reveal blockquote:after {
+	right: 0px;
+	bottom: 0px;
+	content: "\f10e"; /* fa-quote-right */
+}
+
+.reveal blockquote > * {
+	position: relative;
+	z-index: 1;
+}
+
+.reveal blockquote small {
+	display: block;
+	text-align: right;
+	font-style: oblique;
+}
+
+.reveal .the-portrait {
+	-webkit-transform: translateZ(-40px);
+}
+
+.reveal .borderless {
+	border: 0 none;
+	box-shadow: none;
+	background: none;
+}
+
+.reveal .big-check {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin: -0.5em;
+	font-size: 300px;
+	opacity: 1;
+	text-shadow: 0px 3px 14px rgba(0,0,0,0.2);
+	z-index: 10;
+}
+
+/* Liferay 6.2 Badge */
+
+.reveal .liferay62 {
+	width: 0.8em;
+	height: 0.8em;
+	display: inline-block;
+	background: no-repeat url('../../assets/Feature62.svg') 50% 50%;
+	background-size: contain;
+	vertical-align: middle;
+	margin: -0.3em 0;
+	position: relative;
+	top: -2px;
+}
+
+/* Support */
+
+.reveal .support {
+	display: table;
+	width: 100%;
+	margin: 1em 0 0;
+}
+
+.reveal .support .platform {
+	display: table-cell;
+	padding: 1em 0.2em 0.6em;
+	margin: 0.2em;
+}
+
+.reveal .support .platform.highlight {
+	background: rgb(237, 68, 45);
+	background: -webkit-linear-gradient(left, rgb(237, 68, 45), rgb(232, 90, 33));
+	border-radius: 10px;
+}
+
+.reveal .support .platform h3 {
+	white-space: pre;
+	font-size: 1em;
+}
+
+.reveal .support .platform .platform-icon {
+	font-size: 200px;
+	margin: 15px auto 30px;
+	display: block;
+	line-height: 1em;
+}
+
+.reveal .support .platform img.platform-icon {
+	height: 1em;
+	width: auto;
+	max-width: 1em;
+	border: 0 none;
+	background: none;
+	box-shadow: none;
+	outline: 0 none;
+	position: relative;
+	top: 15px;
+}
+
+.reveal .support .platform p {
+	font-size: 0.6em;
+}
+
